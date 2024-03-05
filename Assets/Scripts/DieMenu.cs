@@ -33,7 +33,7 @@ public class DieMenu : Sounds
         {
             if (Settings.IsDarkSoulsOn) 
             {
-                PlaySound(sounds[1], volume: 1.5f, p1: 1f, p2: 1.1f);
+                PlaySound(sounds[1], volume: 2.5f, p1: 1f, p2: 1.1f);
             }
             else
             {
