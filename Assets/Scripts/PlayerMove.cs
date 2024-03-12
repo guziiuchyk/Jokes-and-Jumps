@@ -6,19 +6,33 @@ public class PlayerMove : Sounds
 {
     private float speed = 5f;
     private float horizontal;
-    private float jumpPower = 16f;
-
+    [SerializeField] float jumpPower = 16f;
+    [SerializeField] public bool IsHaveKey = false;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
     // Update is called once per frame
+    private void Start()
+    {
+        if (Settings.IsDarkSoulsOn)
+        {
+            PlaySound(sounds[3], volume:0.4f);
+        }
+        else
+        {
+            PlaySound(sounds[2], volume:0.7f);
+        }
+    }
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (rb.gravityScale < 0 && jumpPower > 0)
         {
+            jumpPower = jumpPower * -1;
+        }
+        if (Input.GetButtonDown("Jump") && IsGrounded())
+        { 
             if (Settings.IsDarkSoulsOn)
             {
                 PlaySound(sounds[1], volume: 0.8f);

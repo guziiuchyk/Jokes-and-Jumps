@@ -12,10 +12,12 @@ public class DieMenu : Sounds
     private void OnEnable()
     {
         SpikeTrigger.onDied += Die;
+        OpenChest.OnDied += Die;
     }
     private void OnDisable()
     {
         SpikeTrigger.onDied -= Die;
+        OpenChest.OnDied -= Die;
     }
     public void Play()
     {
