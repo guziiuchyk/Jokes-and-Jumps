@@ -9,6 +9,7 @@ public class DieMenu : Sounds
     public GameObject dieCanvas;
     [SerializeField] GameObject FirstButton;
     [SerializeField] ChangeSelectedEventSystem changeSelectedEventSystem;
+    [SerializeField] Animator animator;
     private void OnEnable()
     {
         SpikeTrigger.onDied += Die;
@@ -27,6 +28,8 @@ public class DieMenu : Sounds
 
     public void Die()
     {
+        animator.SetBool("IsDead", true);
+
         if (Settings.IsAutoRespawn)
         {
             Play();

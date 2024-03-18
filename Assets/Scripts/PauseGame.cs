@@ -12,7 +12,7 @@ public class PauseGame : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown("Cancel"))
         {
             if(pauseGame)
             {
