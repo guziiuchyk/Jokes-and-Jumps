@@ -284,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - {fileID: 8300000, guid: 3fe33be20075b4044912eca22988ce17, type: 3}
-  playerRb: {fileID: 0}
+  playerRb: {fileID: 628926627}
   trap: {fileID: 2142960755}
   power: 30
 --- !u!61 &193825893
@@ -1328,7 +1328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - {fileID: 8300000, guid: 3fe33be20075b4044912eca22988ce17, type: 3}
-  playerRb: {fileID: 0}
+  playerRb: {fileID: 628926627}
   trap: {fileID: 1263971945}
   power: 30
 --- !u!61 &595372050
@@ -1385,6 +1385,11 @@ Animator:
 --- !u!4 &628926624 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2457729256334686480, guid: bd94efd043ae7924ab7ae52f79615beb, type: 3}
+  m_PrefabInstance: {fileID: 752283399}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &628926627 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 6975200329362847717, guid: bd94efd043ae7924ab7ae52f79615beb, type: 3}
   m_PrefabInstance: {fileID: 752283399}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &641237654
@@ -2703,7 +2708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - {fileID: 8300000, guid: 3fe33be20075b4044912eca22988ce17, type: 3}
-  playerRb: {fileID: 0}
+  playerRb: {fileID: 628926627}
   trap: {fileID: 1144194652}
   power: 30
 --- !u!61 &1977083364
@@ -3004,7 +3009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - {fileID: 8300000, guid: 3fe33be20075b4044912eca22988ce17, type: 3}
-  playerRb: {fileID: 0}
+  playerRb: {fileID: 628926627}
   trap: {fileID: 735026378}
   power: 30
 --- !u!61 &2128332586
