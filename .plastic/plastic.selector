@@ -1,0 +1,4 @@
+repository "Jokes and Jumps@Nazar20062@cloud"
+  path "/"
+    br "/main"
+    co "/main"

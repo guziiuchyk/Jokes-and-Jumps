@@ -29,6 +29,7 @@ public class DieMenu : Sounds
     public void Die()
     {
         animator.SetBool("IsDead", true);
+        Debug.Log("DEAD");
 
         if (Settings.IsAutoRespawn)
         {

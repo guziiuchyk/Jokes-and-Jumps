@@ -9,10 +9,13 @@ public class KeyTrigger : Sounds
     {
         if (collision.name == "Player")
         {
-            collision.gameObject.GetComponent<PlayerMove>().IsHaveKey = true;
-            PlaySound(sounds[0], volume:0.7f);
-            key.IsFollow = true;
-            key.IsIdle = false;
+            if (!key.IsFollow)
+            {
+                collision.gameObject.GetComponent<PlayerMove>().IsHaveKey = true;
+                PlaySound(sounds[0], volume: 0.7f);
+                key.IsFollow = true;
+                key.IsIdle = false;
+            }
         }
     }
 }
